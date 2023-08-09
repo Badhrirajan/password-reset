@@ -93,7 +93,7 @@ UserRouter.post('/forgot-password', (req,res) => {
       from: 'badhrirajan2211@gmail.com',
       to: email,
       subject: 'Reset your Password',
-      text: `https://password-reset-rmb9.onrender.com/${user._id}/${token}`
+      text: ``
     };
     
     transporter.sendMail(mailOptions, function(error, info){
