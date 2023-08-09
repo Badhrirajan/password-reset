@@ -88,7 +88,7 @@ UserRouter.post('/forgot-password', (req,res) => {
         pass: 'iswakqmzrwtefjfg'
       }
     });
-    const link = 'https://warm-dragon-c11fcf.netlify.app/reset/${user._id}/${token}'
+    const link = `https://warm-dragon-c11fcf.netlify.app/reset/${user._id}/${token}`
     var mailOptions = {
       from: 'badhrirajan2211@gmail.com',
       to: email,
